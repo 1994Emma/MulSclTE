@@ -7,7 +7,9 @@ MulSclTE is an unsupervised action segmentation (UAS) framework designed to enha
 1. Bi-Encoder Training: Utilizes a self-supervised temporal loss function, which integrates global-level prediction loss and clip-level contrastive loss to enhance representation capability.
 2. Inference with PS-Seg: Enhances frame-level interactions by combining frame prediction errors with adjacent frame similarities for improved action boundary detection. It then refines the results by clustering to merge related action segments and mitigate over-segmentation. Implementation will be released later.
 
-Currently, we release the core implementation of the Bi-Encoder. Additional code, including inference and full pipeline components, will be released progressively.
+Currently, the core Bi-Encoder module, including both training and inference, has been released. 
+Additional modules (e.g., PS-Seg) will be progressively released.
+
 ## Requirements
 - Python 3.7.10 
 - Pytorch 1.13.1
